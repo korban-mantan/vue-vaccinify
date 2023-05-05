@@ -14,6 +14,11 @@ const router = createRouter({
       component: () => import('../views/HomeView.vue')
     },
     {
+      path: '/consult',
+      name: 'consult',
+      component: () => import('../views/ConsultView.vue')
+    },
+    {
       path: '/vaccination',
       name: 'vaccination',
       component: () => import('../views/VaccineView.vue')
@@ -24,9 +29,9 @@ const router = createRouter({
       component: () => import('../views/HospitalView.vue')
     },
     {
-      path: '/consult',
-      name: 'consult',
-      component: () => import('../views/ConsultView.vue')
+      path: '/register',
+      name: 'register',
+      component: () => import('../views/RegisterView.vue')
     }
   ]
 })
